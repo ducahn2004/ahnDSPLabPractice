@@ -1,0 +1,1 @@
+[x, fs] = audioread(audioclip1.wav );
