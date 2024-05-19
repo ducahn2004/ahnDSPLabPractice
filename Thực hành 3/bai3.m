@@ -1,0 +1,10 @@
+[input, fs] = audioread('start.au');
+t = 0:12671;
+subplot(211);
+plot(t(2000:4000), input(2000:4000));
+title("Miền thời gian");
+X = fft(input,2000);
+subplot(212);
+f_axis = 1000*linspace(0,1,1000);
+plot(f_axis,2*abs(X(1:1000))) ;
+title("Miền tần số");
